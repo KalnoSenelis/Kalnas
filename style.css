@@ -394,8 +394,8 @@ Structure and Layout
 
 .content {
 	float: left;
-	width: 67%;
-	padding-right: 40px;
+	width: 100%;
+	padding-right: 0px;
 	
 }
 
@@ -637,7 +637,7 @@ Site Header
 
 .banner img {
 	max-width: 100%;
-	margin-bottom: 30px;
+	margin-bottom: -10px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -1011,7 +1011,7 @@ Sidebars
 .sidebar a,
 .entry-content a,
 .site-footer a {
-	border-bottom: 1px solid #E3E3E3;
+/*	border-bottom: 1px solid #E3E3E3;*/
 }
 
 .widget-title {
@@ -1097,6 +1097,7 @@ Site Footer
 
 p.copyright {
 	float: left;
+    visibility: hidden;
 }
 
 p.credit {
@@ -1257,14 +1258,18 @@ Plugins Style
 input#subscribe-field {
 	padding: 16px !important;
 }
-/*Pataisymai 2017/12/30*/
+
+
+/*satsangai--------------------------------------------------------------------------- */
+
 
 .satsangai {
 	 position:relative;
      overflow:hidden;
+     
 }
 
-.tekstas {
+#satsangotekstas {
         position:absolute;
         min-height:200px;
         margin-top: 6%;
@@ -1275,4 +1280,284 @@ input#subscribe-field {
         float:right;
         min-height:200px;
   
+}
+
+
+/*media query*/
+@media only screen and (max-width: 770px) {
+    #satsangotekstas {
+        position: relative;
+        
+    }
+    #medis {
+        width:250px; 
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+}
+/*media query*/
+
+/*satsangai--------------------------------------------------------------------------- */
+
+/*mokytojai--------------------------------------------------------------------------- */
+
+.mokytojudiv {
+	 position:relative;
+     overflow:hidden;
+}
+
+.mokytojas1 {
+        width:200px;
+        float:left;
+        min-height:200px;
+}
+
+.mokytojas2 {
+        margin-left: 20%;
+        width:200px;
+        float:left;
+        min-height:200px;
+}
+
+.mokytojas3 {
+        width:200px;
+        float:right;
+        min-height:200px;  
+}
+
+
+/*media query*/
+@media only screen and (max-width: 770px) {
+   .mokytojas1 {
+       
+        width:200px;
+        float:none;
+        min-height:200px;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+    .mokytojas2 {
+       
+        width:200px;
+           float:none;
+        min-height:200px;
+        margin-left: auto;
+        margin-right: auto;
+        
+}
+
+    .mokytojas3 {
+        width:200px;
+            float:none;
+        min-height:200px;
+        margin-left: auto;
+        margin-right: auto;
+}
+}
+/*media query*/
+
+/*mokytojai--------------------------------------------------------------------------- */
+
+/*auka--------------------------------------------------------------------------- */
+
+.auka {
+	 position:relative;
+     overflow:hidden;
+
+}
+
+#aukatekstas {
+        position:absolute;
+        min-height:200px;
+        margin-top: 6%;
+       
+}
+
+#aukagelyte {
+        width:300px;
+        float:right;
+        min-height:200px;
+  
+}
+
+
+/*media query*/
+@media only screen and (max-width: 770px) {
+   
+    
+    #aukatekstas {
+        position: relative;
+        
+    }
+    #aukagelyte {
+        width:250px; 
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+}
+/*media query*/
+
+/*auka--------------------------------------------------------------------------- */
+
+/*mokytojai detail--------------------------------------------------------------------------- */
+
+.mokytojas {
+	 position:relative;
+/*     overflow:hidden;*/
+     height: 400px; 
+}
+
+.mokytojofotodiv {
+        position:absolute;
+        height: 100%;
+        width: 26%;
+    
+       
+}
+
+.mokytojofoto {   
+     height: 95%;
+     width: 89%;
+     margin-top: 5%;
+}
+
+.mokytojotekstas {
+        padding: 0 1%;
+        width:72%;
+        text-align: justify;
+        float:right;
+        height: 96%;
+        overflow-y: scroll;
+  
+}
+
+
+/*media query*/
+@media only screen and (max-width: 770px) {
+   .mokytojofotodiv {
+        position:relative;
+        height: 296px;
+        width: 177px;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom: 1px solid lightgray;
+       
+       
+}
+
+.mokytojofoto {   
+     height: 100%;
+     width: 100%;
+     margin-top: 0%;
+}
+
+.mokytojotekstas {
+        margin-top: 5%;
+        padding: 0 1%;
+        width:100%;
+        text-align: justify;
+        float:right;
+        height: 96%;
+        overflow-y: scroll;
+  
+}
+}
+/*media query*/
+
+/*mokytojai detail--------------------------------------------------------------------------- */
+
+/*kelias--------------------------------------------------------------------------- */
+
+.kelias {
+	 position:relative;
+     overflow:hidden;
+     height: 300px;
+     
+
+   
+}
+
+.kairediv {
+        position:absolute;
+        height: 100%;
+        width: 50%;
+/*        border: blue solid;*/
+        text-align: center;
+       
+}
+
+.desinediv { 
+     text-align: center;
+     height: 100%;
+     width: 50%;
+/*     border: red solid;*/
+     float:right;
+}
+
+.apaciadiv {
+        
+margin-top: -13%;
+  
+}
+
+
+/*media query*/
+@media only screen and (max-width: 770px) {
+    
+    
+.kelias {
+	 position:relative;
+     overflow:auto;
+     height: 100%;
+   
+}
+    
+   .kairediv {
+        position:relative;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+       
+}
+
+.desinediv { 
+     text-align: center;
+     height: 100%;
+     width: 100%;
+     float:none;
+  
+}
+    
+    .apaciadiv {
+        
+margin-top: 20%;
+  
+}
+
+}
+/*media query*/
+
+/*kelias--------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    font-family: 'Open Sans', sans-serif!important;
+    font-size: 15px!important;
+    font-weight: 300!important;
 }

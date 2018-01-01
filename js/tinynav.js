@@ -5,6 +5,6 @@ b.header||e.find(":eq("+a(f+" li").index(a(f+" li."+b.active))+")").attr("select
 jQuery(function ($) {
   $(".nav-primary ul.menu-primary").tinyNav({
   		active: 'current-menu-item',
-        header: 'Navigation' // Writing any title with this option triggers the header
+        header: 'Meniu' // Writing any title with this option triggers the header
       });
 });
